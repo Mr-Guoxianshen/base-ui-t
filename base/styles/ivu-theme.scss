@@ -1,0 +1,95 @@
+/*********      iView    ******/
+@import 'iview/dist/styles/iview.css';
+
+.ivu-menu-title-icon {
+    text-align: center;
+    width: 15px;
+    font-size: 18px;
+}
+// @primary-color: #8c0776;
+// 导航栏选中后的背景颜色
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+    color: @c-theme-color;    
+    background-color: rgba(80, 110, 218, 0.05)
+}
+// 导航栏，鼠标经过的背景色
+.ivu-menu-vertical .ivu-menu-item:hover, .ivu-menu-vertical .ivu-menu-submenu-title:hover {
+    background-color: rgba(80, 110, 218, 0.05)
+}
+
+
+.ivu-menu-vertical .ivu-menu-item-group-title {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item {
+    font-size: 17px;
+    color: #333;
+}
+
+.ivu-menu-vertical .ivu-menu-item, .ivu-menu-vertical .ivu-menu-submenu-title  {
+    padding-left: 28px;    
+}
+.ivu-checkbox-checked .ivu-checkbox-inner {      
+    border-color: @c-theme-color;
+    background-color: @c-theme-color;
+}
+.ivu-tabs-nav .ivu-tabs-tab-active {
+    color: @c-theme-color;
+}
+.ivu-tabs-nav .ivu-tabs-tab:hover {
+    color: @c-theme-color;
+}
+.ivu-tabs-ink-bar{
+    background-color: @c-theme-color;
+}
+// 按钮基础颜色
+.ivu-btn-primary {
+    color: #fff;
+    background-color: @c-theme-color;
+    border-color: @c-theme-color;
+}
+.ivu-btn-primary:hover{
+    color: #fff;
+    background-color: @c-theme-color;
+    border-color: @c-theme-color;
+}
+// 导航栏每行字体超出...
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item {
+    font-size: 16px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+// 导航栏字体颜色
+.ivu-menu {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+}
+
+.ivu-select-visible .ivu-select-selection {
+    box-shadow: none;
+}
+.ivu-select-selection {
+    border: none;
+    border-radius: 0;    
+    box-shadow: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    background-repeat: no-repeat;             
+    background-size: 0 2px,100% 1px;           
+    background-image: linear-gradient(@c-theme-color,@c-theme-color),linear-gradient(#e0e0e0,#e0e0e0);        
+    transition: background 0s ease-out;       
+    background-position: center bottom,center calc(100% - 1px);
+    &:focus {            
+        background-size: 100% 2px,100% 1px;
+        outline: 0;
+        transition-duration: .3s;
+    }
+}
